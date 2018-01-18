@@ -24,6 +24,12 @@ Resources:
       Handler: helloworld.lambda_handler
       Role: arn:aws:iam::282415712953:role/aacorne-lambdainvoke-role
       CodeUri: ./
+      Events:
+        PostResource:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
       Tags:
           Owner: corne
           Status: active
