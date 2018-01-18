@@ -46,7 +46,7 @@ Resources:
           "/":
             post:
               x-amazon-apigateway-integration:
-                httpMethod: POST
+                httpMethod: GET
                 type: aws_proxy
                 passthroughBehavior: when_no_match
                 uri:
