@@ -25,12 +25,12 @@ Resources:
       Role: arn:aws:iam::282415712953:role/aacorne-lambdainvoke-role
       AutoPublishAlias: prod
       CodeUri: ./
-      #Events:
-      #  GetResource:
-      #    Type: Api
-      #    Properties:
-      #      Path: /
-      #      Method: get
+      Events:
+        GetResource:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
       Tags:
           Owner: aacorne
           Status: active
