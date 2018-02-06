@@ -31,6 +31,7 @@ Resources:
           Properties:
             Path: /
             Method: get
+            RestApiId: !Ref HelloWorldAPIGateway
       Tags:
           Owner: aacorne
           Status: active
@@ -39,7 +40,8 @@ Resources:
       Tracing: Active
 
   # API Gateway setup, points to the helloworld Lambda
-  APIGateway:
+  # note !Ref function in LambdaFunction definition point to this resource, otherwise 2 API gateways will be created
+  HelloWorldAPIGateway:
     Type: AWS::Serverless::Api
     Properties:
       Name: aacorne-helloworld
