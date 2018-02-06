@@ -57,5 +57,5 @@ Resources:
                 type: aws_proxy
                 passthroughBehavior: when_no_match
                 uri:
-                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloWorldFunction.Arn}/invocations
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloWorldFunction.Alias}/invocations
               responses: {}
