@@ -23,6 +23,7 @@ Resources:
       Description: aacorne-helloworld
       Handler: helloworld.lambda_handler
       Role: arn:aws:iam::282415712953:role/aacorne-lambdainvoke-role
+      AutoPublishAlias: prod
       CodeUri: ./
       Events:
         PostResource:
