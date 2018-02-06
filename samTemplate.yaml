@@ -42,7 +42,7 @@ Resources:
   APIGateway:
     Type: AWS::Serverless::Api
     Properties:
-      Name: aacorne-helloworld
+      Name: aacorne-helloworld-bla
       StageName: prod
       DefinitionBody:
         swagger: 2.0
