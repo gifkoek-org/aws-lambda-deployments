@@ -26,13 +26,13 @@ Resources:
       AutoPublishAlias: prod
       CodeUri: ./
       Events:
-        PostResource:
+        GetResource:
           Type: Api
           Properties:
             Path: /
             Method: get
       Tags:
-          Owner: corne
+          Owner: aacorne
           Status: active
           Environment: development
           Name: aacorne-helloworld
