@@ -55,9 +55,9 @@ Resources:
           "/":
             get:
               x-amazon-apigateway-integration:
-                httpMethod: GET
+                httpMethod: POST
                 type: aws_proxy
                 passthroughBehavior: when_no_match
                 uri:
-                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloWorldFunction.Alias}
+                  Fn::Sub: arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloWorldFunction.Alias}/invocations
               responses: {}
